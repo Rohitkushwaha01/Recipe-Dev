@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@1,100&family=Playfair+Display&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.head {
+  display: block;
+  width: 70%;
+  margin: 40px auto;
+  overflow-x: hidden;
+}
+
+.head h1 {
+  font-family: "Playfair Display";
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #f2994a;
+}
+
+.head p {
+  font-family: "Montserrat";
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.italic {
+  display: flex;
+  align-items: start;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3b3a3a;
+}
+
+.cake {
+  width: 100%;
+}
+
+.dots {
+  margin-top: 4px;
+}
+
+.main {
+  display: block;
+  width: 70%;
+  margin: 40px auto;
+}
+
+h2 {
+  font-family: "Playfair Display";
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.todo {
+  margin-top: 25px;
+  width: 50%;
+}
+
+.todo p {
+  font-size: 25px;
+  font-family: "Playfair Display";
+  font-weight: bolder;
+  margin-bottom: 35px;
+  color: #f2994a;
+}
+
+.checksheet {
+  display: flex;
+  font-style: normal;
+}
+
+.checksheet input {
+  margin: 0px 30px 30px 0px;
+  padding: 20px;
+  height: 25px;
+}
+
+.checksheet label {
+  font-size: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.steps {
+  width: 100%;
+  display: flex;
+  margin: 0px 0px 30px 0px;
+}
+
+.box {
+  padding: 10px 15px;
+  background-color: #f2994a;
+  border-radius: 5px;
+  height: 20px;
+  margin: 0px 20px 30px 0px;
+}
+
+.boxcont p {
+  font-size: 20px;
+}
+
+.todo-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 150px;
+  padding: 30px;
+  box-shadow: 0px 0px 19px 0px black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-cont {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  color: black;
+}
+
+.font span {
+  font-size: 42px;
+  margin-right: 8px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #f2994a;
+  padding: 30px;
+  text-align: center;
+  font-family: "Playfair Display";
+  font-weight: bold;
+}
+
+/* @media screen and (max-width: 1000px) {
+  .head p {
+    width: 80%;
+  }
+} */
+
+@media screen and (max-width: 900px) {
+  .head {
+    width: 90%;
+  }
+  .main {
+    width: 90% !important;
+  }
+
+  .todo-main {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .sidebar {
+    width: auto !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .font span {
+    margin-bottom: 0px;
+  }
+  .todo {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .icon-cont {
+    justify-content: space-around !important;
+    width: 100%;
+  }
+}
